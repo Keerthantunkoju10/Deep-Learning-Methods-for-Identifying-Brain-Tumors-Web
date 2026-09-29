@@ -23,15 +23,38 @@ export default function SampleGallery({ onSelectSample }) {
     '12.png': { type: 'Tumor', desc: 'High-attenuation cranial mass lesion.' },
   };
 
+  const defaultSamples = [
+    { filename: '1.jpg', size_kb: 5.4 },
+    { filename: '2.jpg', size_kb: 31.1 },
+    { filename: '3.jpg', size_kb: 131.2 },
+    { filename: '4.JPG', size_kb: 19.1 },
+    { filename: '5.jpg', size_kb: 5.4 },
+    { filename: '6.jpg', size_kb: 6.4 },
+    { filename: '7.JPG', size_kb: 26.8 },
+    { filename: '8.jpg', size_kb: 6.2 },
+    { filename: '9.jpg', size_kb: 19.3 },
+    { filename: '10.JPG', size_kb: 19.4 },
+    { filename: '11.jpg', size_kb: 6.1 },
+    { filename: '12.png', size_kb: 35.6 },
+  ];
+
   useEffect(() => {
     fetch(`${API_BASE}/api/samples`)
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error('API returned non-200');
+        return res.json();
+      })
       .then(data => {
-        setSamples(data.samples || []);
+        if (data.samples && data.samples.length > 0) {
+          setSamples(data.samples);
+        } else {
+          setSamples(defaultSamples);
+        }
         setLoading(false);
       })
       .catch(err => {
-        console.error('Failed to load samples:', err);
+        console.warn('Backend samples API unavailable, using bundled samples:', err);
+        setSamples(defaultSamples);
         setLoading(false);
       });
   }, []);
@@ -104,11 +127,13 @@ export default function SampleGallery({ onSelectSample }) {
               <div key={sample.filename} className="sample-card">
                 <div className="sample-thumb-wrap">
                   <img
-                    src={`${API_BASE}/api/sample-image/${sample.filename}`}
+                    src={API_BASE ? `${API_BASE}/api/sample-image/${sample.filename}` : `/testImages/${sample.filename}`}
                     alt={sample.filename}
                     loading="lazy"
                     onError={(e) => {
-                      console.warn(`Failed to load image for: ${sample.filename}`);
+                      if (!e.target.src.includes('/testImages/')) {
+                        e.target.src = `/testImages/${sample.filename}`;
+                      }
                     }}
                   />
                   <span
