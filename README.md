@@ -56,21 +56,35 @@ Built by integrating your deep learning models with a modern fullstack architect
 
 ## 🚀 How to Run the Application
 
-### Option A: One-Click Launcher (Recommended)
+### Option A: One-Click Fullstack Launcher
 Double click or run:
 ```bash
 run_fullstack.bat
 ```
 This automatically boots:
 - The FastAPI engine on `http://127.0.0.1:8000`
-- The Vite UI on `http://localhost:5173` (or `http://localhost:5174`)
+- The Vite UI on `http://localhost:5173`
 
-### Option B: Manual Startup
+### Option B: Backend Only (FastAPI + AI Models + Built UI)
+Double click or run:
+```bash
+run_backend.bat
+```
+Or from terminal:
+```bash
+python backend/app.py
+```
+*(The backend includes self-healing auto-forwarding: if run with standard Python 3.14, it automatically routes execution to the configured Python 3.12 `.venv`).*
+
+### Option C: Manual Startup
 
 #### Step 1: Start the Backend Server
 ```bash
-cd backend
-py -3.12 -m uvicorn app:app --port 8000 --host 127.0.0.1
+# Using the configured virtual environment:
+.\.venv\Scripts\python.exe backend/app.py
+
+# Or using Python 3.12 launcher directly:
+py -3.12 -m uvicorn app:app --port 8000 --host 127.0.0.1 --app-dir backend
 ```
 
 #### Step 2: Start the Frontend UI
@@ -79,7 +93,7 @@ cd frontend
 npm run dev
 ```
 
-Visit **`http://localhost:5173`** or **`http://localhost:5174`** in your browser.
+Visit **`http://localhost:5173`** for Vite dev mode or **`http://127.0.0.1:8000`** for the unified production engine.
 
 ---
 

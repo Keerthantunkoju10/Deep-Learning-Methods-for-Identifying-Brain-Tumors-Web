@@ -8,16 +8,17 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# SPA Fallback: Redirect all web routes to index.html for client-side routing
+# 1. API Reverse Proxy: When the Python FastAPI backend is deployed on Render/Railway/Cloud,
+# uncomment and replace with your backend URL to forward all /api/* requests with zero CORS issues.
+# IMPORTANT: In Netlify, /api/* MUST appear BEFORE the /* SPA fallback rule!
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://your-neuroscan-backend.onrender.com/api/:splat"
+#   status = 200
+#   force = true
+
+# 2. SPA Fallback: Direct all client routes to index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-# API Proxy Option: When your Python FastAPI backend is deployed on Render/Railway/Cloud,
-# uncomment and set your backend URL below to proxy all /api/* requests with zero CORS issues!
-# [[redirects]]
-#   from = "/api/*"
-#   to = "https://your-backend-api.onrender.com/api/:splat"
-#   status = 200
-#   force = true
