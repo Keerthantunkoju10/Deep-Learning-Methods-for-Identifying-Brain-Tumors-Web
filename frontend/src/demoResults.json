@@ -1,0 +1,606 @@
+{
+  "1.jpg": {
+    "filename": "1.jpg",
+    "classification": {
+      "prediction": "No Tumor Detected",
+      "class_index": 0,
+      "has_tumor": false,
+      "confidence": 99.91,
+      "probabilities": {
+        "no_tumor": 99.91,
+        "tumor": 0.09
+      }
+    },
+    "segmentation": {
+      "tumor_detected": false,
+      "total_tumor_pixels": 0,
+      "tumor_coverage_percentage": 0.0,
+      "regions_count": 0,
+      "regions": [],
+      "severity": "Normal / Negative",
+      "severity_level": "low",
+      "clinical_note": "No neoplastic mass or hyper-intense abnormal tissue detected by neural classifier."
+    },
+    "images": {
+      "original": "/demoOverlays/1/original.png",
+      "mask": "/demoOverlays/1/mask.png",
+      "heatmap": "/demoOverlays/1/heatmap.png",
+      "contours": "/demoOverlays/1/contours.png",
+      "composite": "/demoOverlays/1/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 218,
+        "height": 231
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:56.830288+00:00"
+    }
+  },
+  "10.JPG": {
+    "filename": "10.JPG",
+    "classification": {
+      "prediction": "Tumor Detected",
+      "class_index": 1,
+      "has_tumor": true,
+      "confidence": 99.93,
+      "probabilities": {
+        "no_tumor": 0.07,
+        "tumor": 99.93
+      }
+    },
+    "segmentation": {
+      "tumor_detected": true,
+      "total_tumor_pixels": 1904.0,
+      "tumor_coverage_percentage": 3.08,
+      "regions_count": 1,
+      "regions": [
+        {
+          "region_id": 1,
+          "area_px": 1904.0,
+          "bbox": {
+            "x": 56,
+            "y": 87,
+            "w": 58,
+            "h": 45
+          },
+          "centroid": {
+            "x": 84,
+            "y": 108
+          },
+          "is_primary": true
+        }
+      ],
+      "severity": "Moderate Sized Neoplasm",
+      "severity_level": "high",
+      "clinical_note": "Distinct neoplastic boundary detected with notable volume. Clinical evaluation recommended."
+    },
+    "images": {
+      "original": "/demoOverlays/10/original.png",
+      "mask": "/demoOverlays/10/mask.png",
+      "heatmap": "/demoOverlays/10/heatmap.png",
+      "contours": "/demoOverlays/10/contours.png",
+      "composite": "/demoOverlays/10/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 272,
+        "height": 331
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:56.952179+00:00"
+    }
+  },
+  "11.jpg": {
+    "filename": "11.jpg",
+    "classification": {
+      "prediction": "No Tumor Detected",
+      "class_index": 0,
+      "has_tumor": false,
+      "confidence": 95.05,
+      "probabilities": {
+        "no_tumor": 95.05,
+        "tumor": 4.95
+      }
+    },
+    "segmentation": {
+      "tumor_detected": false,
+      "total_tumor_pixels": 0,
+      "tumor_coverage_percentage": 0.0,
+      "regions_count": 0,
+      "regions": [],
+      "severity": "Normal / Negative",
+      "severity_level": "low",
+      "clinical_note": "No neoplastic mass or hyper-intense abnormal tissue detected by neural classifier."
+    },
+    "images": {
+      "original": "/demoOverlays/11/original.png",
+      "mask": "/demoOverlays/11/mask.png",
+      "heatmap": "/demoOverlays/11/heatmap.png",
+      "contours": "/demoOverlays/11/contours.png",
+      "composite": "/demoOverlays/11/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 227,
+        "height": 222
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:57.060294+00:00"
+    }
+  },
+  "12.png": {
+    "filename": "12.png",
+    "classification": {
+      "prediction": "Tumor Detected",
+      "class_index": 1,
+      "has_tumor": true,
+      "confidence": 100.0,
+      "probabilities": {
+        "no_tumor": 0.0,
+        "tumor": 100.0
+      }
+    },
+    "segmentation": {
+      "tumor_detected": true,
+      "total_tumor_pixels": 2860.5,
+      "tumor_coverage_percentage": 4.87,
+      "regions_count": 1,
+      "regions": [
+        {
+          "region_id": 1,
+          "area_px": 2860.5,
+          "bbox": {
+            "x": 172,
+            "y": 131,
+            "w": 55,
+            "h": 72
+          },
+          "centroid": {
+            "x": 201,
+            "y": 167
+          },
+          "is_primary": true
+        }
+      ],
+      "severity": "Significant / Large Volume Mass",
+      "severity_level": "critical",
+      "clinical_note": "Substantial tumor volume segmented with elevated mass effect. Urgent neuro-oncology review advised."
+    },
+    "images": {
+      "original": "/demoOverlays/12/original.png",
+      "mask": "/demoOverlays/12/mask.png",
+      "heatmap": "/demoOverlays/12/heatmap.png",
+      "contours": "/demoOverlays/12/contours.png",
+      "composite": "/demoOverlays/12/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 240,
+        "height": 300
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:57.174680+00:00"
+    }
+  },
+  "2.jpg": {
+    "filename": "2.jpg",
+    "classification": {
+      "prediction": "Tumor Detected",
+      "class_index": 1,
+      "has_tumor": true,
+      "confidence": 99.88,
+      "probabilities": {
+        "no_tumor": 0.12,
+        "tumor": 99.88
+      }
+    },
+    "segmentation": {
+      "tumor_detected": true,
+      "total_tumor_pixels": 1716.5,
+      "tumor_coverage_percentage": 3.41,
+      "regions_count": 1,
+      "regions": [
+        {
+          "region_id": 2,
+          "area_px": 1716.5,
+          "bbox": {
+            "x": 120,
+            "y": 78,
+            "w": 41,
+            "h": 57
+          },
+          "centroid": {
+            "x": 139,
+            "y": 105
+          },
+          "is_primary": true
+        }
+      ],
+      "severity": "Moderate Sized Neoplasm",
+      "severity_level": "high",
+      "clinical_note": "Distinct neoplastic boundary detected with notable volume. Clinical evaluation recommended."
+    },
+    "images": {
+      "original": "/demoOverlays/2/original.png",
+      "mask": "/demoOverlays/2/mask.png",
+      "heatmap": "/demoOverlays/2/heatmap.png",
+      "contours": "/demoOverlays/2/contours.png",
+      "composite": "/demoOverlays/2/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 300,
+        "height": 359
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:57.270477+00:00"
+    }
+  },
+  "3.jpg": {
+    "filename": "3.jpg",
+    "classification": {
+      "prediction": "Tumor Detected",
+      "class_index": 1,
+      "has_tumor": true,
+      "confidence": 99.58,
+      "probabilities": {
+        "no_tumor": 0.42,
+        "tumor": 99.58
+      }
+    },
+    "segmentation": {
+      "tumor_detected": true,
+      "total_tumor_pixels": 3100.0,
+      "tumor_coverage_percentage": 3.7,
+      "regions_count": 1,
+      "regions": [
+        {
+          "region_id": 1,
+          "area_px": 3100.0,
+          "bbox": {
+            "x": 200,
+            "y": 139,
+            "w": 61,
+            "h": 64
+          },
+          "centroid": {
+            "x": 230,
+            "y": 172
+          },
+          "is_primary": true
+        }
+      ],
+      "severity": "Significant / Large Volume Mass",
+      "severity_level": "critical",
+      "clinical_note": "Substantial tumor volume segmented with elevated mass effect. Urgent neuro-oncology review advised."
+    },
+    "images": {
+      "original": "/demoOverlays/3/original.png",
+      "mask": "/demoOverlays/3/mask.png",
+      "heatmap": "/demoOverlays/3/heatmap.png",
+      "contours": "/demoOverlays/3/contours.png",
+      "composite": "/demoOverlays/3/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 825,
+        "height": 993
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:57.397665+00:00"
+    }
+  },
+  "4.JPG": {
+    "filename": "4.JPG",
+    "classification": {
+      "prediction": "Tumor Detected",
+      "class_index": 1,
+      "has_tumor": true,
+      "confidence": 92.96,
+      "probabilities": {
+        "no_tumor": 7.04,
+        "tumor": 92.96
+      }
+    },
+    "segmentation": {
+      "tumor_detected": true,
+      "total_tumor_pixels": 1177.5,
+      "tumor_coverage_percentage": 2.41,
+      "regions_count": 1,
+      "regions": [
+        {
+          "region_id": 1,
+          "area_px": 1177.5,
+          "bbox": {
+            "x": 153,
+            "y": 93,
+            "w": 46,
+            "h": 39
+          },
+          "centroid": {
+            "x": 175,
+            "y": 111
+          },
+          "is_primary": true
+        }
+      ],
+      "severity": "Moderate Sized Neoplasm",
+      "severity_level": "high",
+      "clinical_note": "Distinct neoplastic boundary detected with notable volume. Clinical evaluation recommended."
+    },
+    "images": {
+      "original": "/demoOverlays/4/original.png",
+      "mask": "/demoOverlays/4/mask.png",
+      "heatmap": "/demoOverlays/4/heatmap.png",
+      "contours": "/demoOverlays/4/contours.png",
+      "composite": "/demoOverlays/4/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 288,
+        "height": 340
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:57.513188+00:00"
+    }
+  },
+  "5.jpg": {
+    "filename": "5.jpg",
+    "classification": {
+      "prediction": "No Tumor Detected",
+      "class_index": 0,
+      "has_tumor": false,
+      "confidence": 99.91,
+      "probabilities": {
+        "no_tumor": 99.91,
+        "tumor": 0.09
+      }
+    },
+    "segmentation": {
+      "tumor_detected": false,
+      "total_tumor_pixels": 0,
+      "tumor_coverage_percentage": 0.0,
+      "regions_count": 0,
+      "regions": [],
+      "severity": "Normal / Negative",
+      "severity_level": "low",
+      "clinical_note": "No neoplastic mass or hyper-intense abnormal tissue detected by neural classifier."
+    },
+    "images": {
+      "original": "/demoOverlays/5/original.png",
+      "mask": "/demoOverlays/5/mask.png",
+      "heatmap": "/demoOverlays/5/heatmap.png",
+      "contours": "/demoOverlays/5/contours.png",
+      "composite": "/demoOverlays/5/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 218,
+        "height": 231
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:57.625345+00:00"
+    }
+  },
+  "6.jpg": {
+    "filename": "6.jpg",
+    "classification": {
+      "prediction": "No Tumor Detected",
+      "class_index": 0,
+      "has_tumor": false,
+      "confidence": 100.0,
+      "probabilities": {
+        "no_tumor": 100.0,
+        "tumor": 0.0
+      }
+    },
+    "segmentation": {
+      "tumor_detected": false,
+      "total_tumor_pixels": 0,
+      "tumor_coverage_percentage": 0.0,
+      "regions_count": 0,
+      "regions": [],
+      "severity": "Normal / Negative",
+      "severity_level": "low",
+      "clinical_note": "No neoplastic mass or hyper-intense abnormal tissue detected by neural classifier."
+    },
+    "images": {
+      "original": "/demoOverlays/6/original.png",
+      "mask": "/demoOverlays/6/mask.png",
+      "heatmap": "/demoOverlays/6/heatmap.png",
+      "contours": "/demoOverlays/6/contours.png",
+      "composite": "/demoOverlays/6/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 215,
+        "height": 234
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:57.743793+00:00"
+    }
+  },
+  "7.JPG": {
+    "filename": "7.JPG",
+    "classification": {
+      "prediction": "Tumor Detected",
+      "class_index": 1,
+      "has_tumor": true,
+      "confidence": 99.79,
+      "probabilities": {
+        "no_tumor": 0.21,
+        "tumor": 99.79
+      }
+    },
+    "segmentation": {
+      "tumor_detected": true,
+      "total_tumor_pixels": 1398.5,
+      "tumor_coverage_percentage": 2.08,
+      "regions_count": 1,
+      "regions": [
+        {
+          "region_id": 1,
+          "area_px": 1398.5,
+          "bbox": {
+            "x": 158,
+            "y": 88,
+            "w": 41,
+            "h": 50
+          },
+          "centroid": {
+            "x": 177,
+            "y": 111
+          },
+          "is_primary": true
+        }
+      ],
+      "severity": "Moderate Sized Neoplasm",
+      "severity_level": "high",
+      "clinical_note": "Distinct neoplastic boundary detected with notable volume. Clinical evaluation recommended."
+    },
+    "images": {
+      "original": "/demoOverlays/7/original.png",
+      "mask": "/demoOverlays/7/mask.png",
+      "heatmap": "/demoOverlays/7/heatmap.png",
+      "contours": "/demoOverlays/7/contours.png",
+      "composite": "/demoOverlays/7/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 273,
+        "height": 342
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:57.853986+00:00"
+    }
+  },
+  "8.jpg": {
+    "filename": "8.jpg",
+    "classification": {
+      "prediction": "No Tumor Detected",
+      "class_index": 0,
+      "has_tumor": false,
+      "confidence": 92.08,
+      "probabilities": {
+        "no_tumor": 92.08,
+        "tumor": 7.92
+      }
+    },
+    "segmentation": {
+      "tumor_detected": false,
+      "total_tumor_pixels": 0,
+      "tumor_coverage_percentage": 0.0,
+      "regions_count": 0,
+      "regions": [],
+      "severity": "Normal / Negative",
+      "severity_level": "low",
+      "clinical_note": "No neoplastic mass or hyper-intense abnormal tissue detected by neural classifier."
+    },
+    "images": {
+      "original": "/demoOverlays/8/original.png",
+      "mask": "/demoOverlays/8/mask.png",
+      "heatmap": "/demoOverlays/8/heatmap.png",
+      "contours": "/demoOverlays/8/contours.png",
+      "composite": "/demoOverlays/8/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 225,
+        "height": 225
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:57.971198+00:00"
+    }
+  },
+  "9.jpg": {
+    "filename": "9.jpg",
+    "classification": {
+      "prediction": "Tumor Detected",
+      "class_index": 1,
+      "has_tumor": true,
+      "confidence": 100.0,
+      "probabilities": {
+        "no_tumor": 0.0,
+        "tumor": 100.0
+      }
+    },
+    "segmentation": {
+      "tumor_detected": true,
+      "total_tumor_pixels": 1597.0,
+      "tumor_coverage_percentage": 2.33,
+      "regions_count": 1,
+      "regions": [
+        {
+          "region_id": 1,
+          "area_px": 1597.0,
+          "bbox": {
+            "x": 69,
+            "y": 130,
+            "w": 50,
+            "h": 45
+          },
+          "centroid": {
+            "x": 93,
+            "y": 151
+          },
+          "is_primary": true
+        }
+      ],
+      "severity": "Moderate Sized Neoplasm",
+      "severity_level": "high",
+      "clinical_note": "Distinct neoplastic boundary detected with notable volume. Clinical evaluation recommended."
+    },
+    "images": {
+      "original": "/demoOverlays/9/original.png",
+      "mask": "/demoOverlays/9/mask.png",
+      "heatmap": "/demoOverlays/9/heatmap.png",
+      "contours": "/demoOverlays/9/contours.png",
+      "composite": "/demoOverlays/9/composite.png"
+    },
+    "metadata": {
+      "original_dimensions": {
+        "width": 400,
+        "height": 369
+      },
+      "processed_dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "timestamp": "2026-10-02T17:30:58.098706+00:00"
+    }
+  }
+}
