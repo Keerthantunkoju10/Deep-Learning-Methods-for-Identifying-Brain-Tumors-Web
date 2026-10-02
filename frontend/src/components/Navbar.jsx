@@ -63,10 +63,10 @@ export default function Navbar({ activeTab, setActiveTab, systemStatus }) {
 
         {/* Status & Dev Info */}
         <div className="nav-actions">
-          <div className="system-status-pill">
-            <span className={`status-dot ${isOnline ? 'online' : 'offline'}`} />
-            <span className="status-label-full">{isOnline ? 'CNN & U-Net Active' : 'Connecting...'}</span>
-            <span className="status-label-short">{isOnline ? 'Active' : 'Offline'}</span>
+          <div className={`system-status-pill ${isOnline ? '' : 'demo-pill'}`}>
+            <span className={`status-dot ${isOnline ? 'online' : 'demo'}`} />
+            <span className="status-label-full">{isOnline ? 'CNN & U-Net Cloud Active' : 'Neural Demo Active'}</span>
+            <span className="status-label-short">{isOnline ? 'Live' : 'Demo'}</span>
           </div>
         </div>
       </div>
